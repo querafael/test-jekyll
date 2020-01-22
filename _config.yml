@@ -10,7 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 
 # Plugins
-gems: ["jekyll-paginate-v2"]
+plugins: ["jekyll-paginate-v2"]
 
 # Build settings
 markdown: kramdown

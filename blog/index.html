@@ -64,9 +64,9 @@ pagination:
 						{% endif %}
 
 						{% if page == 1 %}
-							{% assign href = site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: '/page:num', '' %}
+							{% assign href = site.page_path | prepend: site.baseurl | replace: '//', '/' | replace: '/page:num', '' %}
 						{% else %}
-							{% assign href = site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page %}
+							{% assign href = site.page_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page %}
 						{% endif %}
 
 						<li><a href="{{ href }}" class="{{ class }}">{{ page }}</a></li>

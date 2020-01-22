@@ -18,4 +18,12 @@ sass:
   sass_dir: assets/sass
 
 # Pagination
-paginate: 4
+pagination:
+  enabled: true
+  per_page: 4
+  offset: 2
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
